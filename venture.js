@@ -13,9 +13,11 @@ var answer = prompt("Do you want to play a game? yes or no");
         if (answer === true) {
           console.log("You win the game!");
           confirm("You caught me ^_____^");
+          location.reload();
         } else if (answer === false) {
           console.log("You just lost the game. But it could have been worse, believe me.");
           confirm("GOT YOU");
+          location.reload();
         } else {
           burnBabyBurn();
         }
@@ -47,7 +49,7 @@ var answer = prompt("Do you want to play a game? yes or no");
           prompt("Your end is imminent.");
           burnBabyBurn();
         } else {
-          console.log("REPENT FOR THE END IS NEIGH");
+          console.log("REPENT THE END IS NEIGH");
           prompt("you fool");
           burnBabyBurn();
         }
@@ -67,6 +69,7 @@ var answer = prompt("Do you want to play a game? yes or no");
       if (answer === true) {
         console.log("Did you get my Babe reference?");
         confirm("Was that so hard?");
+        location.reload();
       } else if (answer === false) {
         console.log("YOU'VE BETRAYED MY TRUST");
         confirm("YOU DON'T GET TO CHOOSE");
@@ -82,10 +85,11 @@ var answer = prompt("Do you want to play a game? yes or no");
       if (answer === "y") {
         console.log("I appreciate your cooperation.");
         confirm("Fine. Go.");
+        location.reload();
       } else if (answer === "n" || false) {
         console.log("Don't play with my emotions. I deserve more than that.");
         confirm("I think this relationship is salvagable.");
-        confirm("Refresh if you want.");
+        location.reload();
       } else {
         burnBabyBurn();
       }
@@ -95,11 +99,14 @@ var answer = prompt("Do you want to play a game? yes or no");
       if (answer === true) {
         console.log("The window sent a TRUE statement/variable/whatever.");
         confirm("Something you did was true.");
+        location.reload();
       } else if (answer === false) {
         console.log("The window sent a FALSE statement/variable/whatever.");
         confirm("Something you did was false.");
+        location.reload();
       } else {
         confirm("Just get out.");
+        location.reload();
       }
       // <--- WEEKLY if 3b --->
     }
@@ -107,7 +114,7 @@ var answer = prompt("Do you want to play a game? yes or no");
     // <--- MONTHLY if 2 --->"Do you want to play a game? yes or no"
 
   }  else {
-    console.log("Don't be a jerk.");
+    console.log("Excuse?");
     answer = prompt("I did not understand. Did you mean to say: yes");
     // <--- MONTHLY if 3 --->
     if (answer === "yes") {
@@ -117,6 +124,7 @@ var answer = prompt("Do you want to play a game? yes or no");
       if (answer === "yes") {
         console.log("Congrats.");
         confirm("ok we cool");
+        location.reload();
       } else if (answer === "no" || false) {
         confirm("You're a bad person.");
         confirm("If you didn't know it before,");
@@ -138,9 +146,11 @@ var answer = prompt("Do you want to play a game? yes or no");
       if (answer === "Iron Man") {
         confirm("I get it, he's funny and died for Earth once.");
         confirm("You're allowed to leave.");
+        location.reload();
       } else if (answer === "Captain America") {
         confirm("<3 He has a special place in my heart too <3");
         confirm("You're allowed to leave.");
+        location.reload();
       } else {
         burnBabyBurn();
       }
