@@ -2,19 +2,42 @@ console.log("Welcome Stranger ;P");
 
 var answer = prompt("Do you want to play a game? yes or no");
 
+
+function burnBabyBurn() {
+  while (true) {
+    confirm("CRASH");
+    console.log("You just lost the game.");
+    confirm("BURN BABY BURN");
+    console.log("You just lost the game.");
+    confirm("I GIVE YOU SPECIFIC INSTRUCTION");
+    console.log("You just lost the game.");
+    confirm("AND YOU DO THIS?");
+    console.log("You just lost the game.");
+    confirm("YOU MADE YOUR CHOICE");
+    console.log("You just lost the game.");
+    confirm("NOW YOU");
+    console.log("You just lost the game.");
+  }
+  return;
+}
+
 // <--- YEARLY if --->"Do you want to play a game? yes or no"
   if (answer === "yes") {
-    answer = prompt("Have you inspected the page yet? yes or no");
+    increment(counter);
+    answer = prompt("Have you inspected the page yet?\n\nyes or no");
     // <--- MONTHLY if 1 --->
       if (answer === "yes") {
+        increment(counter);
         console.log("Well aren't you special.");
-        answer = confirm("Sweet. Don't hit ok.");
+        answer = confirm("Sweet.\nDon't hit ok.");
         // <--- WEEKLY if 1a --->
         if (answer === true) {
+          increment(counter);
           console.log("You win the game!");
           confirm("You caught me ^_____^");
           location.reload();
         } else if (answer === false) {
+          decrement(counter);
           console.log("You just lost the game. But it could have been worse, believe me.");
           confirm("GOT YOU");
           location.reload();
@@ -39,10 +62,10 @@ var answer = prompt("Do you want to play a game? yes or no");
         // <--- WEEKLY if 2a --->
       } else {
         // <--- WEEKLY if 3a --->"Have you inspected the page yet? yes or no"
-        answer = prompt("You said something random. Try to redeem yourself: yes or no");
+        answer = prompt("You said something random.\n\nTry to redeem yourself: yes or no");
         if (answer === "yes") {
           console.log("REPENT");
-          confirm("Thank you for participating. But it is too late mortal.");
+          confirm("Thank you for participating.\n\n\nBut it is too late mortal.");
           burnBabyBurn();
         } else if (answer === "no" || false) {
           console.log("REPENT");
@@ -60,7 +83,7 @@ var answer = prompt("Do you want to play a game? yes or no");
 
   } else if (answer === "no") {
     console.log("Then why bother participate in the first place?!");
-    answer = prompt("TOUGH COOKIES PLAY MY GAME SAY: OK don't say no");
+    answer = prompt("TOUGH COOKIES PLAY MY GAME\n\nSAY: OK\n\ndon't say no");
     // <--- MONTHLY if 2 --->"TOUGH COOKIES PLAY MY GAME SAY: OK"
     if (answer === "ok") {
       // <--- WEEKLY if 1b --->
@@ -80,7 +103,7 @@ var answer = prompt("Do you want to play a game? yes or no");
       // <--- WEEKLY if 1b --->"TOUGH COOKIES PLAY MY GAME SAY: OK"
     } else if (answer === "no") {
       // <--- WEEKLY if 2b --->
-      console.log("Why are you even here, wasting time, power, general resources...");
+      console.log("Why are you even here,\n\nwasting time,\npower,\ngeneral resources...");
       answer = prompt("Fo real? y or n");
       if (answer === "y") {
         console.log("I appreciate your cooperation.");
@@ -142,7 +165,7 @@ var answer = prompt("Do you want to play a game? yes or no");
     } else if (answer === "no") {
       // <--- WEEKLY if 2c --->"I did not understand. Did you mean to say: yes"
       confirm("Is that so. Fine. Answer me this user:");
-      answer = prompt("Are for Iron Man or Captain America? Spell wisely.");
+      answer = prompt("Are for Iron Man or Captain America?\n\nSpell wisely.");
       if (answer === "Iron Man") {
         confirm("I get it, he's funny and died for Earth once.");
         confirm("You're allowed to leave.");
@@ -157,7 +180,7 @@ var answer = prompt("Do you want to play a game? yes or no");
       // <--- WEEKLY if 2c --->
     } else {
       // <--- WEEKLY if 3c --->"I did not understand. Did you mean to say: yes"
-      answer = confirm("You did it again. My wrath hath incurred.");
+      answer = confirm("You did it again.\n\n\nMy wrath hath incurred.");
       if (answer === false) {
         confirm("Trying to run from me?");
         confirm("IMPOSSIBLE");
@@ -170,21 +193,3 @@ var answer = prompt("Do you want to play a game? yes or no");
     // <--- MONTHLY if 3 --->
   }
 // <--- YEARLY if --->
-
-function burnBabyBurn() {
-  while (true) {
-    confirm("CRASH");
-    console.log("You just lost the game.");
-    confirm("BURN BABY BURN");
-    console.log("You just lost the game.");
-    confirm("I GIVE YOU SPECIFIC INSTRUCTION");
-    console.log("You just lost the game.");
-    confirm("AND YOU DO THIS?");
-    console.log("You just lost the game.");
-    confirm("YOU MADE YOUR CHOICE");
-    console.log("You just lost the game.");
-    confirm("NOW YOU");
-    console.log("You just lost the game.");
-  }
-  return;
-}
